@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donate — Helping Hands</title>
+  <meta name="description" content="Donate to Helping Hands — support education, health and livelihoods." />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 id="site-title">Helping Hands</h1>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="donate.html" class="btn-donate">Donate</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container donate-page">
+    <h2 class="section-title">Donate</h2>
+
+    <div class="donate-grid">
+      <section class="donation-form-card">
+        <h3>Make a Donation</h3>
+
+        <form id="donationForm" onsubmit="return handleDonate(event)" aria-label="Donation form">
+          <label for="donorName">Full name</label>
+          <input id="donorName" name="donorName" type="text" required />
+
+          <label for="donorEmail">Email</label>
+          <input id="donorEmail" name="donorEmail" type="email" required />
+
+          <label>Donation amount</label>
+          <div class="amount-options" role="radiogroup" aria-label="Donation amounts">
+            <label><input type="radio" name="amount" value="500" /> ₹500</label>
+            <label><input type="radio" name="amount" value="1000" /> ₹1,000</label>
+            <label><input type="radio" name="amount" value="2500" /> ₹2,500</label>
+            <label><input type="radio" name="amount" value="5000" /> ₹5,000</label>
+          </div>
+
+          <label for="otherAmount">Or enter other amount (INR)</label>
+          <input id="otherAmount" name="otherAmount" type="number" min="1" placeholder="e.g. 1500" />
+
+          <label for="purpose">Purpose</label>
+          <select id="purpose" name="purpose">
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="livelihood">Livelihood</option>
+            <option value="general">General Support</option>
+          </select>
+
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+
+          <button type="submit" class="btn primary">Proceed to Pay (Simulated)</button>
+        </form>
+      </section>
+
+      <aside class="donation-info">
+        <h3>Why donate?</h3>
+        <p>Your donation is used to run community programs, pay local staff, buy materials, and carry out field visits. We ensure transparency through regular reports.</p>
+
+        <h4>Donation options</h4>
+        <ul>
+          <li>One-time donation</li>
+          <li>Monthly support (contact us to set up)</li>
+        </ul>
+
+        <h4>Tax benefit</h4>
+        <p>Donations are eligible for tax benefit under the local law (consult your tax advisor).</p>
+      </aside>
+    </div>
+
+    <div id="donationSuccess" class="notice success hidden" role="status"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">
+      <p>© <span id="year2"></span> Helping Hands. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
