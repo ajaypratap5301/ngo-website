@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helping Hands NGO</title>
+  <meta name="description"
+    content="Helping Hands — empowering communities through education, health and livelihood programs." />
+
+  <!-- Font Awesome Kit (script method) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("8V89icQDq3cIrRbxo"); // Replace with your EmailJS public key
+    })();
+  </script>
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/ngo.png" alt="Helping Hands NGO Logo" class="logo">
+
+        <h1 id="site-title">Helping Hands</h1>
+        <p class="tagline">Empowering communities | Building futures</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="donate.html" class="btn-donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2 class="hero-title">Support education • health • livelihood</h2>
+      <p class="lead">Join us in creating opportunities for children and families. Your support makes lasting change.
+      </p>
+      <div class="hero-ctas">
+        <a href="donate.html" class="btn primary">Donate Now</a>
+        <a href="#programs" class="btn secondary">Our Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section container">
+    <h2 class="section-title">About Us</h2>
+    <div class="grid two-col">
+      <div>
+        <p><strong>Helping Hands</strong> is a non-profit organisation working to improve education, healthcare, and
+          sustainable livelihoods in underserved communities. We partner with local leaders to design programs that are
+          culturally appropriate and measurable.</p>
+        <ul>
+          <li>Community-run education programs</li>
+          <li>Primary health camps & awareness</li>
+          <li>Skill training & micro-enterprise support</li>
+        </ul>
+      </div>
+      <div>
+        <img src="assets/holder.jpg" alt="Community program" class="responsive-img" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Our Programs</h2>
+      <div class="grid three-col programs-list">
+        <article class="program-card">
+          <i class="fa-solid fa-school program-icon" aria-hidden="true"></i>
+          <h3>Education</h3>
+          <p>After-school centers, scholarships and teacher training to keep children in school.</p>
+        </article>
+
+        <article class="program-card">
+          <i class="fa-solid fa-hand-holding-heart program-icon" aria-hidden="true"></i>
+          <h3>Health & Nutrition</h3>
+          <p>Community health camps, nutrition counselling and maternal care awareness.</p>
+        </article>
+
+        <article class="program-card">
+          <i class="fa-solid fa-briefcase program-icon" aria-hidden="true"></i>
+          <h3>Livelihoods</h3>
+          <p>Skill-building workshops and microloan support for small businesses.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick-stats -->
+  <section class="section container stats">
+    <div class="grid three-col">
+      <div class="stat">
+        <div class="stat-value">120+</div>
+        <div class="stat-label">Villages reached</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">5,000+</div>
+        <div class="stat-label">Children supported</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">250+</div>
+        <div class="stat-label">Women trained</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section class="section cta-block">
+    <div class="container">
+      <h2 class="section-title">Make a difference today</h2>
+      <a href="donate.html" class="btn primary large">Donate</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Please fill out the form below:</p>
+
+    <form id="contact-form" class="user-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="user_name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="user_phone" placeholder="Enter your phone number">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+
+  <footer id="contactf" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Helping Hands</h3>
+        <p>123 Community Lane, YourCity, Country<br />Phone: +91 98765 43210<br />Email: hello@helpinghands.org</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+        <a href="#programs">Programs</a>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>© <span id="year"></span> Helping Hands. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Site scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
